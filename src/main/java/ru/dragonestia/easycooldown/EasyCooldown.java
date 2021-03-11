@@ -22,7 +22,7 @@ public class EasyCooldown extends PluginBase implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
-        getServer().getScheduler().scheduleRepeatingTask(new PlayersTask(this), 10);
+        getServer().getScheduler().scheduleRepeatingTask(new PlayersTask(this), 1);
 
         for(Player player: getServer().getOnlinePlayers().values()){
             PlayerCooldownManager.join(player);

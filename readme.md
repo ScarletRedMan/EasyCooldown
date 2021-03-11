@@ -27,6 +27,7 @@ int left = cooldown.getSecondsLeft();
 ```
 -----------------------------------
 <h4>Добавление времени</h4>
+
 ```java
 //Получаем объект кулдауна с ключем 'test' от менеджера игрока
 PlayerCooldown cooldown = manager.getCooldown("test");
@@ -36,6 +37,7 @@ cooldown.addSeconds(10);
 ```
 -----------------------------------
 <h4>Принудительное завершение кулдауна</h4>
+
 ```java
 //Получаем объект кулдауна с ключем 'test' от менеджера игрока
 PlayerCooldown cooldown = manager.getCooldown("test");
